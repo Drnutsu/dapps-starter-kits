@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Button } from 'antd'
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       <div className='mt-4 p-4 w-1/4 rounded bg-blue-300 text-center'>
         <p className='text-blue-600'>This should be very blue.</p>
       </div>
+
+      <Button>TEST</Button>
     </div>
   )
 }
