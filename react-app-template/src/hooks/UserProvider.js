@@ -1,7 +1,9 @@
+import dynamic from "next/dynamic";
 import { Web3Provider } from "@ethersproject/providers";
-import BurnerProvider from "burner-provider";
 import { useMemo } from "react";
 import { INFURA_ID } from "../constants";
+
+const BurnerProvider = dynamic(() => import("burner-provider"), { ssr: false });
 
 /*
   ~ What it does? ~

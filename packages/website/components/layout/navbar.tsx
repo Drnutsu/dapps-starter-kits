@@ -1,3 +1,5 @@
+import { appName } from 'constants/all'
+
 export default function Navbar() {
   return (
     <div className='navbar shadow-lg bg-neutral text-neutral-content rounded-box'>
@@ -14,7 +16,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className='flex-1 hidden px-2 mx-2 lg:flex'>
-        <span className='text-lg font-bold'>DaisyUI</span>
+        <span className='text-lg font-bold'>{appName}</span>
       </div>
       <div className='flex-1 lg:flex-none'>
         <div className='form-control'>
