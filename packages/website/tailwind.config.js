@@ -1,11 +1,10 @@
 module.exports = {
-  prefix: 'tw-',
   purge: {
     options: {
       safelist: [/data-theme$/]
     }
   },
-  darkMode: false, // or 'media' or 'class'
+  // darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {}
   },

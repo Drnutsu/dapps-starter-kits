@@ -1,15 +1,15 @@
 import Head from 'next/head'
-import Container from 'components/layout/container'
+import Page from 'components/layout/page'
 import Button from 'components/base/button'
 
 export default function Home() {
   return (
-    <Container>
+    <Page>
       <Head>
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Button>ClickMe!!</Button>
-    </Container>
+    </Page>
   )
 }
