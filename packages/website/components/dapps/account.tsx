@@ -27,12 +27,8 @@ export default function Account() {
       )
     } else {
       modalButtons.push(
-        <Button
-          key='loginbutton'
-          /* type={minimized ? "default" : "primary"}     too many people just defaulting to MM and having a bad time */
-          onClick={loadWeb3Modal}
-        >
-          connect
+        <Button key='loginbutton' onClick={loadWeb3Modal}>
+          Connect Wallet
         </Button>
       )
     }

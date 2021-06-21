@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 export default function useExchangePrice(targetNetwork, mainnetProvider, pollTime) {
   const [price, setPrice] = useState(0)
-
   const pollPrice = () => {
     async function getPrice() {
       if (targetNetwork.price) {

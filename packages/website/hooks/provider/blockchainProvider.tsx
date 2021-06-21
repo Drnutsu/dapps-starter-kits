@@ -41,7 +41,8 @@ const web3Modal = new Web3Modal({
 })
 
 const useSetupWalletConnection = () => {
-  const mainnetProvider = scaffoldEthProvider && scaffoldEthProvider._network ? scaffoldEthProvider : mainnetInfura
+  // const mainnetProvider = scaffoldEthProvider && scaffoldEthProvider._network ? scaffoldEthProvider : mainnetInfura
+  const mainnetProvider = mainnetInfura
   const [injectedProvider, setInjectedProvider] = useState()
 
   const userProvider = useUserProvider(injectedProvider, localProvider)
